@@ -1,65 +1,188 @@
-## 🚀 What I Build
+<!-- Professional GitHub Profile README — Gorisi Deepak Reddy -->
 
-| Domain | What I deliver |
-|---|---|
-| 🤖 **Machine Learning** | Predictive models (Random Forest, Gradient Boosting, ARIMA, Prophet, KNN, RNN) |
-| 🔄 **ETL Pipelines** | End-to-end Python/SQL data pipelines with PostgreSQL & SQLite |
-| 📊 **Business Intelligence** | Prescriptive Tableau & Power BI dashboards for stakeholder reporting |
-| 💡 **Financial Analytics** | Cost-benefit systems, risk quantification, churn ROI modeling |
-| 🧠 **AI Agents** | Streamlit-based AI tools powered by LLM APIs (Groq/Llama-3) |
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&width=700&lines=Gorisi+Deepak+Reddy;Data+Scientist+%7C+ML+Engineer;Analytics+%26+Decision+Systems" alt="Typing intro" />
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=thedeepakreddy&label=Profile+views&color=6366f1&style=for-the-badge" alt="Profile views" />
+
+<br/><br/>
+
+**I turn messy operational data into forecasts, models, and dashboards that leaders can act on.**
+
+📍 Budapest, Hungary &nbsp;•&nbsp; 🎓 MSc Business Analytics &nbsp;•&nbsp; 🟢 Open to Data / ML / Analytics roles in EU
+
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thedeepakreddy)
+[![Email](https://img.shields.io/badge/Email-thedeepakreddy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thedeepakreddy)
+
+</div>
+
+---
+
+## 👋 About Me
+
+```python
+deepak = {
+    "role": "Data Scientist · ML Engineer · Analytics Consultant",
+    "focus": ["Predictive ML", "Time Series", "ETL & SQL", "BI & Decision Systems"],
+    "strength": "End-to-end — from PostgreSQL pipelines to Tableau exec dashboards",
+    "location": "Budapest, Hungary",
+    "currently": "Building production-grade analytics & AI agent projects",
+    "open_to": ["Data Scientist", "ML Engineer", "Analytics Engineer", "BI Developer"],
+}
+```
+
+I design **decision systems** — not just notebooks. My work spans **leakage-safe ML**, **macro & operations forecasting**, **supply-chain risk modeling**, and **LLM-powered automation**, always tied to measurable business outcomes (SLA, churn, cost, RMSE/ROC-AUC).
+
+---
+
+## 🏆 Impact at a Glance
+
+| Metric | Highlight |
+|:------:|:----------|
+| **Capstone ML** | Random Forest supply-chain risk — **RMSE 0.0412** |
+| **Forecasting** | **24+ years** macro data — Prophet, SARIMAX, XGBoost benchmarking |
+| **Ops Analytics** | Last-mile SLA breach prediction + financial bleed audit (Budapest) |
+| **AI Product** | End-to-end job-application agent — Playwright + Groq Llama-3 |
+| **Public repos** | **6** end-to-end analytics & ML projects (pinned below) |
 
 ---
 
 ## ⭐ Featured Projects
 
-| Project | Description | Tech Stack |
-|---|---|---|
-| 🚚 [**Last-Mile Delivery Analytics — Budapest**](https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest) | ML pipeline to audit delivery SLA breaches & quantify financial impact | Python, Scikit-Learn, PostgreSQL |
-| 🌐 [**AI-Driven Global Sourcing Risk Analyzer**](https://github.com/thedeepakreddy/AI-Driven-Trade-Policy-Impact-and-Decision-Support-System) | MSc Capstone: Random Forest Regressor (RMSE: 0.0412) for supply chain risk | Random Forest, Python, Pandas |
-| 📈 [**Inflation Forecasting & Decision System**](https://github.com/thedeepakreddy/Inflation-Forecasting-Decision-System) | ARIMA, SARIMA & Prophet models on 24 years of macroeconomic data | ARIMA, Prophet, Python |
-| 📉 [**Enterprise Customer Churn Analytics**](https://github.com/thedeepakreddy/Enterprise-Churn-Optimization) | Gradient Boosting Classifier (87% ROC-AUC) with SHAP analysis & Tableau dashboard | XGBoost, SHAP, Tableau |
-| 🛒 [**Prescriptive Churn Analytics — E-commerce**](https://github.com/thedeepakreddy/Prescriptive-Churn-Analytics-in-E-commerce) | Leakage-proof ML pipeline (ROC-AUC: 0.92) with custom financial models | Scikit-Learn, Python, SQL |
-| 🤖 [**AutoCV — AI Job Application Generator**](https://github.com/thedeepakreddy/AutoCV_AI-Powered_Application_Generator) | Playwright-powered LinkedIn scraper + Groq Llama-3 LLM for tailored applications | Playwright, Groq API, Python |
-| 🌍 [**UNICEF Transaction Volume Analysis**](https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis) | Anomaly detection & trend analysis on daily transaction data across UNICEF Global operations | Python, Pandas, Anomaly Detection |
+> Pin these repositories on your profile for maximum recruiter visibility.
+
+<br/>
+
+### 🚴 Last-Mile Delivery Analytics — Budapest
+<a href="https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=Last-Mile-Delivery-Analytics-Budapest&theme=tokyonight&hide_border=true&border_radius=12" alt="Last-Mile Delivery Analytics" />
+</a>
+
+| | |
+|---|---|
+| **Problem** | SLA breaches & payout bleed in high-volume last-mile networks |
+| **Solution** | PostgreSQL audit pipeline → Random Forest SLA predictor → Tableau exec dashboard |
+| **Stack** | `PostgreSQL` `Python` `Scikit-Learn` `Tableau` `Pandas` |
+| **Impact** | Flagged 5+ min SLA violations, 10%+ route cost bleed; spatial Buda–Pest routing insights |
+
+<br/>
+
+### 🌐 AI-Driven Trade Policy & Sourcing Risk (MSc Capstone)
+<a href="https://github.com/thedeepakreddy/AI-Driven-Trade-Policy-Impact-and-Decision-Support-System">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=AI-Driven-Trade-Policy-Impact-and-Decision-Support-System&theme=tokyonight&hide_border=true&border_radius=12" alt="Trade Policy DSS" />
+</a>
+
+| | |
+|---|---|
+| **Problem** | Trade Policy Uncertainty (TPU) & tariff shock impact on global sourcing |
+| **Solution** | ML-based Decision Support System with actionable sourcing recommendations |
+| **Stack** | `Random Forest` `Python` `Pandas` `Jupyter` |
+| **Impact** | **RMSE 0.0412** on non-linear economic impact prediction |
+
+<br/>
+
+### 📈 Inflation Forecasting & Decision System
+<a href="https://github.com/thedeepakreddy/Inflation-Forecasting-Decision-System">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=Inflation-Forecasting-Decision-System&theme=tokyonight&hide_border=true&border_radius=12" alt="Inflation Forecasting" />
+</a>
+
+| | |
+|---|---|
+| **Problem** | Macro inflation planning across multi-decade economic cycles |
+| **Solution** | Comparative time-series stack with automated RMSE/MAPE evaluation |
+| **Stack** | `Prophet` `SARIMAX` `XGBoost` `Python` `Tableau` |
+| **Impact** | Rigorous model benchmarking on **24 years** of macroeconomic data |
+
+<br/>
+
+### 🤖 AutoCV — AI Job Application Generator
+<a href="https://github.com/thedeepakreddy/AutoCV_AI-Powered_Application_Generator">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=AutoCV_AI-Powered_Application_Generator&theme=tokyonight&hide_border=true&border_radius=12" alt="AutoCV" />
+</a>
+
+| | |
+|---|---|
+| **Problem** | Hours spent tailoring resumes per job posting |
+| **Solution** | Streamlit app: LinkedIn scrape → LLM rewrite → styled PDF resume + cover letter |
+| **Stack** | `Streamlit` `Playwright` `Groq API` `Llama-3.3-70b` `Python` |
+| **Impact** | Keyword-mapped applications with zero experience-loss prompt engineering |
+
+<br/>
+
+### 🌍 UNICEF Transaction Volume Analysis
+<a href="https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=UNICEF-Transaction-Volume-Analysis&theme=tokyonight&hide_border=true&border_radius=12" alt="UNICEF Analysis" />
+</a>
+
+| | |
+|---|---|
+| **Problem** | Monitor service delivery across five global transaction processes |
+| **Solution** | Trend analysis, anomaly detection & monthly performance evaluation |
+| **Stack** | `Python` `Pandas` `Anomaly Detection` |
+| **Context** | Business Data & Analytics assignment — UNICEF Global Shared Services Centre |
+
+<br/>
+
+<details>
+<summary><b>📂 All repositories</b></summary>
+
+| Repository | Type | Description |
+|------------|:----:|-------------|
+| [Last-Mile-Delivery-Analytics-Budapest](https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest) | 🏢 Ops | SLA & financial bleed audit pipeline |
+| [AI-Driven-Trade-Policy-Impact-and-Decision-Support-System](https://github.com/thedeepakreddy/AI-Driven-Trade-Policy-Impact-and-Decision-Support-System) | 🎓 MSc | Trade policy ML decision system |
+| [Inflation-Forecasting-Decision-System](https://github.com/thedeepakreddy/Inflation-Forecasting-Decision-System) | 📊 Macro | Multi-model inflation forecasting |
+| [AutoCV_AI-Powered_Application_Generator](https://github.com/thedeepakreddy/AutoCV_AI-Powered_Application_Generator) | 🤖 AI | LLM + Playwright application agent |
+| [UNICEF-Transaction-Volume-Analysis](https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis) | 🌐 NGO | Transaction volume & anomaly analytics |
+
+</details>
 
 ---
 
 ## 🛠️ Tech Stack
 
-### 📊 Data & Analytics
-[![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://python.org)
-[![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+<table>
+<tr>
+<td valign="top" width="33%">
 
-### 🤖 Machine Learning & Deep Learning
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org)
-[![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io/)
-[![XGBoost](https://img.shields.io/badge/XGBoost-189AD3?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
-[![KNN](https://img.shields.io/badge/KNN-4B8BBE?style=for-the-badge&logo=python&logoColor=white)](https://scikit-learn.org/stable/modules/neighbors.html)
-[![RNN](https://img.shields.io/badge/RNN-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org)
-[![Deep Learning](https://img.shields.io/badge/Deep%20Learning-4B8BBE?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.deeplearningbook.org/)
+**Languages & Data**
+<br/><br/>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
-### 📊 Time Series & Forecasting
-[![ARIMA](https://img.shields.io/badge/ARIMA-0066cc?style=for-the-badge&logo=python&logoColor=white)](https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html)
-[![SARIMA](https://img.shields.io/badge/SARIMA-0066cc?style=for-the-badge&logo=python&logoColor=white)](https://www.statsmodels.org/stable/modules/tsa.html)
-[![Prophet](https://img.shields.io/badge/Prophet-0066cc?style=for-the-badge&logo=meta&logoColor=white)](https://facebook.github.io/prophet/)
+</td>
+<td valign="top" width="33%">
 
-### 📈 Business Intelligence & Visualization
-[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://www.tableau.com/)
-[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
-[![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+**ML & Forecasting**
+<br/><br/>
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189AD3?style=flat-square&logo=xgboost&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Prophet](https://img.shields.io/badge/Prophet-1877F2?style=flat-square&logo=meta&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-FF6B6B?style=flat-square&logo=python&logoColor=white)
 
-### 🛠️ Tools & Platforms
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
-[![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://www.microsoft.com/excel)
-[![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)](https://colab.research.google.com/)
+</td>
+<td valign="top" width="33%">
+
+**BI, Apps & Cloud**
+<br/><br/>
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -67,6 +190,50 @@
 
 <div align="center">
 
-[![GitHub Stats](https://github-readme-stats.shion.dev/api?username=thedeepakreddy&show_icons=true&theme=radical)](https://github.com/thedeepakreddy)
+<img src="https://github-readme-stats.vercel.app/api?username=thedeepakreddy&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&border_radius=12" height="165" alt="GitHub stats" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=thedeepakreddy&theme=tokyonight&hide_border=true&border_radius=12" height="165" alt="GitHub streak" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thedeepakreddy&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" height="165" alt="Top languages" />
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=thedeepakreddy&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Graph" alt="Activity graph" />
+
+</div>
+
+---
+
+## 🧭 What I Bring to a Team
+
+```mermaid
+flowchart LR
+    A[(Raw Data)] --> B[SQL / ETL / PostgreSQL]
+    B --> C[ML & Forecasting]
+    C --> D[Explainability & Metrics]
+    D --> E[Tableau / Power BI / Streamlit]
+    E --> F((Business Decisions))
+```
+
+- **Production mindset** — leakage-safe features, class imbalance, reproducible pipelines  
+- **Stakeholder fluency** — executive dashboards, not just model scores  
+- **Full-stack analytics** — ingest → model → visualize → recommend  
+- **AI-native builder** — LLM agents with real automation (scraping, PDF, APIs)
+
+---
+
+## 📬 Let's Connect
+
+<div align="center">
+
+If you're hiring for **Data Science**, **ML Engineering**, **Analytics Engineering**, or **BI** — I'd love to chat.
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-thedeepakreddy-181717?style=for-the-badge&logo=github)](https://github.com/thedeepakreddy)
+[![Email](https://img.shields.io/badge/Email-Reach%20Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thedeepakreddy)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,0,2,10,30&height=100&section=footer&text=Thanks%20for%20visiting!%20%E2%80%94%20Let's%20build%20something%20impactful.&fontSize=16&fontColor=ffffff&animation=twinkling" alt="Footer wave" />
 
 </div>
