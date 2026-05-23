@@ -1,5 +1,3 @@
----
-
 ## 🚀 What I Build
 
 | Domain | What I deliver |
@@ -16,13 +14,13 @@
 
 | Project | Description | Tech Stack |
 |---|---|---|
-| 🚚 [**Last-Mile Delivery Analytics — Budapest**](https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest) | ML pipeline to audit delivery SLA breaches & quantify financial bleed | Python, Scikit-Learn, Pandas |
-| 🌐 [**AI-Driven Global Sourcing Risk Analyzer**](https://github.com/thedeepakreddy/AI-Driven-Trade-Policy-Impact-and-Decision-Support-System) | MSc Capstone: Random Forest Regressor (RMSE: 0.0412) | Scikit-Learn, Python, TensorFlow |
-| 📈 [**Inflation Forecasting & Decision System**](https://github.com/thedeepakreddy/Inflation-Forecasting-Decision-System) | ARIMA, SARIMA & Prophet models on 24 years of macroeconomic data | ARIMA, SARIMA, Prophet, Pandas |
-| 📉 [**Enterprise Customer Churn Analytics**](https://github.com/thedeepakreddy/Enterprise-Churn-Optimization) | Gradient Boosting Classifier (87% ROC-AUC) with SHAP analysis & Tableau dashboard | XGBoost, Tableau, Python |
-| 🛒 [**Prescriptive Churn Analytics — E-commerce**](https://github.com/thedeepakreddy/Prescriptive-Churn-Analytics-in-E-commerce) | Leakage-proof ML pipeline (ROC-AUC: 0.92) + custom financial model | Scikit-Learn, Python, Streamlit |
-| 🤖 [**AutoCV — AI Job Application Generator**](https://github.com/thedeepakreddy/AutoCV_AI-Powered_Application_Generator) | Playwright-powered LinkedIn scraper + Groq Llama-3 LLM generating tailored applications | Streamlit, Python, LLM APIs |
-| 🌍 [**UNICEF Transaction Volume Analysis**](https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis) | Anomaly detection & trend analysis on daily transaction data across UNICEF Global operations | Pandas, Matplotlib, Python |
+| 🚚 [**Last-Mile Delivery Analytics — Budapest**](https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest) | ML pipeline to audit delivery SLA breaches & quantify financial impact | Python, Scikit-Learn, PostgreSQL |
+| 🌐 [**AI-Driven Global Sourcing Risk Analyzer**](https://github.com/thedeepakreddy/AI-Driven-Trade-Policy-Impact-and-Decision-Support-System) | MSc Capstone: Random Forest Regressor (RMSE: 0.0412) for supply chain risk | Random Forest, Python, Pandas |
+| 📈 [**Inflation Forecasting & Decision System**](https://github.com/thedeepakreddy/Inflation-Forecasting-Decision-System) | ARIMA, SARIMA & Prophet models on 24 years of macroeconomic data | ARIMA, Prophet, Python |
+| 📉 [**Enterprise Customer Churn Analytics**](https://github.com/thedeepakreddy/Enterprise-Churn-Optimization) | Gradient Boosting Classifier (87% ROC-AUC) with SHAP analysis & Tableau dashboard | XGBoost, SHAP, Tableau |
+| 🛒 [**Prescriptive Churn Analytics — E-commerce**](https://github.com/thedeepakreddy/Prescriptive-Churn-Analytics-in-E-commerce) | Leakage-proof ML pipeline (ROC-AUC: 0.92) with custom financial models | Scikit-Learn, Python, SQL |
+| 🤖 [**AutoCV — AI Job Application Generator**](https://github.com/thedeepakreddy/AutoCV_AI-Powered_Application_Generator) | Playwright-powered LinkedIn scraper + Groq Llama-3 LLM for tailored applications | Playwright, Groq API, Python |
+| 🌍 [**UNICEF Transaction Volume Analysis**](https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis) | Anomaly detection & trend analysis on daily transaction data across UNICEF Global operations | Python, Pandas, Anomaly Detection |
 
 ---
 
