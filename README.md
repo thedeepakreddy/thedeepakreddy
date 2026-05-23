@@ -1,3 +1,5 @@
+<!-- Professional GitHub Profile README — Gorisi Deepak Reddy -->
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=180&section=header&text=Gorisi%20Deepak%20Reddy&fontSize=42&fontColor=ffffff&animation=twinkling" alt="header"/>
@@ -12,13 +14,13 @@
 
 **I turn messy operational data into forecasts, models, and dashboards that leaders can act on.**
 
-📍 Budapest, Hungary &nbsp;•&nbsp; 🎓 MSc Business Data Analytics &nbsp;•&nbsp; 🟢 Open to Data / ML / Analytics roles in EU
+📍 Budapest, Hungary &nbsp;•&nbsp; 🎓 MSc Business Analytics &nbsp;•&nbsp; 🟢 Open to Data / ML / Analytics roles in EU
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thedeepakreddy)
-[![Email](https://img.shields.io/badge/Email-thedeepakreddy1%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/thedeepakreddy](https://www.linkedin.com/in/deepak-reddy-038582223/))
+[![Email](https://img.shields.io/badge/Email-thedeepakreddy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepak-reddy-038582223/)
 
 </div>
 
@@ -26,18 +28,32 @@
 
 ## 👋 About Me
 
-```python
-deepak = {
-    "role": "Data Scientist · ML Engineer · Analytics Consultant",
-    "focus": ["Predictive ML", "Time Series", "ETL & SQL", "BI & Decision Systems"],
-    "strength": "End-to-end — from PostgreSQL pipelines to Tableau exec dashboards",
-    "location": "Budapest, Hungary",
-    "currently": "Building production-grade analytics & AI agent projects",
-    "open_to": ["Data Scientist", "ML Engineer", "Analytics Engineer", "BI Developer"],
-}
-```
+<table>
+<tr>
+<td width="50%" valign="top">
 
-I design **decision systems** — not just notebooks. My work spans **leakage-safe ML**, **macro & operations forecasting**, **supply-chain risk modeling**, and **LLM-powered automation**, always tied to measurable business outcomes (SLA, churn, cost, RMSE/ROC-AUC).
+**Who I am**  
+MSc **Business Data Analytics** graduate based in **Budapest**, building end-to-end analytics products — from SQL pipelines and ML models to executive dashboards and AI agents.
+
+**What I do best**  
+Turn complex operational and economic data into **clear forecasts, risk scores, and decisions** that teams can act on immediately.
+
+</td>
+<td width="50%" valign="top">
+
+| | |
+|---|---|
+| 🎯 **Focus** | Predictive ML · Time Series · ETL/SQL · BI |
+| 🛠️ **Strength** | PostgreSQL → Python/ML → Tableau/Streamlit |
+| 📍 **Location** | Budapest, Hungary (EU) |
+| 🚀 **Now** | Shipping analytics & LLM automation projects |
+| 💼 **Open to** | Data Scientist · ML Engineer · Analytics Engineer · BI Developer |
+
+</td>
+</tr>
+</table>
+
+**Recent highlights:** last-mile SLA & cost analytics (Budapest) · MSc capstone on trade-policy risk (**RMSE 0.0412**) · inflation forecasting on 24+ years of macro data · UNICEF transaction monitoring · AI job-application agent (Playwright + Groq).
 
 ---
 
@@ -54,8 +70,6 @@ I design **decision systems** — not just notebooks. My work spans **leakage-sa
 ---
 
 ## ⭐ Featured Projects
-
-> Pin these repositories on your profile for maximum recruiter visibility.
 
 <br/>
 
@@ -230,10 +244,10 @@ If you're hiring for **Data Science**, **ML Engineering**, **Analytics Engineeri
 
 [![GitHub](https://img.shields.io/badge/GitHub-thedeepakreddy-181717?style=for-the-badge&logo=github)](https://github.com/thedeepakreddy)
 [![Email](https://img.shields.io/badge/Email-Reach%20Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thedeepakreddy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepak-reddy-038582223/)
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,0,2,10,30&height=100&section=footer&text=Thanks%20for%20visiting!%20%E2%80%94%20Let's%20build%20something%20impactful.&fontSize=16&fontColor=ffffff&animation=twinkling" alt="Footer wave" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=100&section=footer&text=Thanks%20for%20visiting!%20%E2%80%94%20Let's%20build%20something%20impactful.&fontSize=16&fontColor=ffffff&animation=twinkling" alt="Footer wave" />
 
 </div>
