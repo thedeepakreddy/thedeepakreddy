@@ -12,7 +12,7 @@
 
 **I turn messy operational data into forecasts, models, and dashboards that leaders can act on.**
 
-📍 Budapest, Hungary &nbsp;•&nbsp; 🎓 MSc Business Analytics &nbsp;•&nbsp; 🟢 Open to Data / ML / Analytics roles in EU
+📍 Budapest, Hungary &nbsp;•&nbsp; 🎓 MSc Business Data Analytics &nbsp;•&nbsp; 🟢 Open to Data / ML / Analytics roles in EU
 
 <br/>
 
