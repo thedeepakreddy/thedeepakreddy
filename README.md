@@ -1,10 +1,10 @@
-<!-- Professional GitHub Profile README — Gorisi Deepak Reddy -->
+<!-- Professional GitHub Profile README · Gorisi Deepak Reddy -->
 
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=180&section=header&text=Gorisi%20Deepak%20Reddy&fontSize=42&fontColor=ffffff&animation=twinkling" alt="header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=650&lines=Data+Scientist+%7C+ML+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=780&lines=Data+Scientist+%7C+ML+Engineer+%7C+Data+Analyst+%7C+Data+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
 
 <br/>
 
@@ -28,24 +28,24 @@
 
 ## 👋 About Me
 
-I'm **Gorisi Deepak Reddy**, an MSc **Business Data Analytics** graduate based in **Budapest, Hungary**, focused on building analytics products that move from raw data to real business decisions. I work across the full stack of analytics — **SQL/ETL pipelines**, **predictive ML & time-series forecasting**, and **Tableau / Streamlit dashboards** — so stakeholders get answers they can trust and act on, not just model outputs in a notebook.
+I'm **Gorisi Deepak Reddy**, an MSc **Business Data Analytics** graduate based in **Budapest, Hungary**, focused on building analytics products that move from raw data to real business decisions. I work across the full stack of analytics · **SQL/ETL pipelines**, **predictive ML & time-series forecasting**, and **Tableau / Streamlit dashboards** · so stakeholders get answers they can trust and act on, not just model outputs in a notebook.
 
 | | |
 |:---|:---|
 | 🎯 **Role** | Data Scientist · ML Engineer · Data Analyst · Business Analyst · Data Engineer |
 | 🔬 **Focus** | Predictive ML · Time Series · ETL/SQL · BI & Decision Systems |
 | 🛠️ **Strength** | PostgreSQL → Python/Scikit-Learn → Tableau/Power BI/Streamlit |
-| 📍 **Location** | Budapest, Hungary — open to roles across the EU |
+| 📍 **Location** | Budapest, Hungary · open to roles across the EU |
 | 🚀 **Currently** | Shipping production-style analytics & LLM automation projects |
 | 💼 **Open to** | Data Scientist · ML Engineer · Data Analyst · Business Analyst · Data Engineer |
 
 **What I've built recently**
 
-- **Last-mile delivery analytics (Budapest)** — end-to-end pipeline auditing SLA breaches and financial bleed; Random Forest for pre-dispatch delay prediction; executive Tableau dashboard with spatial routing insights.
-- **MSc capstone — trade policy & sourcing risk** — ML decision support system for tariff-shock impact; Random Forest with **RMSE 0.0412** and actionable sourcing recommendations.
-- **Inflation forecasting** — Prophet, SARIMAX & XGBoost on **24+ years** of macro data with automated RMSE/MAPE benchmarking and Tableau visual analytics.
-- **UNICEF transaction analysis** — trend monitoring, anomaly detection & service-delivery performance across five global processes.
-- **AutoCV (AI job agent)** — Streamlit app using Playwright + Groq Llama-3 to tailor resumes and cover letters per job posting.
+- **Last-mile delivery analytics (Budapest)** · end-to-end pipeline auditing SLA breaches and financial bleed; Random Forest for pre-dispatch delay prediction; executive Tableau dashboard with spatial routing insights.
+- **MSc capstone · trade policy & sourcing risk** · ML decision support system for tariff-shock impact; Random Forest with **RMSE 0.0412** and actionable sourcing recommendations.
+- **Inflation forecasting** · Prophet, SARIMAX & XGBoost on **24+ years** of macro data with automated RMSE/MAPE benchmarking and Tableau visual analytics.
+- **UNICEF transaction analysis** · trend monitoring, anomaly detection & service-delivery performance across five global processes.
+- **AutoCV (AI job agent)** · Streamlit app using Playwright + Groq Llama-3 to tailor resumes and cover letters per job posting.
 
 I care about **leakage-safe modeling**, clear evaluation metrics, and designs that executives and operators can actually use day to day.
 
@@ -55,10 +55,10 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 
 | Metric | Highlight |
 |:------:|:----------|
-| **Capstone ML** | Random Forest supply-chain risk — **RMSE 0.0412** |
-| **Forecasting** | **24+ years** macro data — Prophet, SARIMAX, XGBoost benchmarking |
+| **Capstone ML** | Random Forest supply-chain risk · **RMSE 0.0412** |
+| **Forecasting** | **24+ years** macro data · Prophet, SARIMAX, XGBoost benchmarking |
 | **Ops Analytics** | Last-mile SLA breach prediction + financial bleed audit (Budapest) |
-| **AI Product** | End-to-end job-application agent — Playwright + Groq Llama-3 |
+| **AI Product** | End-to-end job-application agent · Playwright + Groq Llama-3 |
 | **Public repos** | **6** end-to-end analytics & ML projects (pinned below) |
 
 ---
@@ -67,7 +67,7 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 
 <br/>
 
-### 🚴 Last-Mile Delivery Analytics — Budapest
+### 🚴 Last-Mile Delivery Analytics · Budapest
 <a href="https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=Last-Mile-Delivery-Analytics-Budapest&theme=tokyonight&hide_border=true&border_radius=12" alt="Last-Mile Delivery Analytics" />
 </a>
@@ -77,7 +77,7 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | **Problem** | SLA breaches & payout bleed in high-volume last-mile networks |
 | **Solution** | PostgreSQL audit pipeline → Random Forest SLA predictor → Tableau exec dashboard |
 | **Stack** | `PostgreSQL` `Python` `Scikit-Learn` `Tableau` `Pandas` |
-| **Impact** | Flagged 5+ min SLA violations, 10%+ route cost bleed; spatial Buda–Pest routing insights |
+| **Impact** | Flagged 5+ min SLA violations, 10%+ route cost bleed; spatial Buda · Pest routing insights |
 
 <br/>
 
@@ -109,7 +109,7 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 
 <br/>
 
-### 🤖 AutoCV — AI Job Application Generator
+### 🤖 AutoCV · AI Job Application Generator
 <a href="https://github.com/thedeepakreddy/AutoCV_AI-Powered_Application_Generator">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=thedeepakreddy&repo=AutoCV_AI-Powered_Application_Generator&theme=tokyonight&hide_border=true&border_radius=12" alt="AutoCV" />
 </a>
@@ -133,7 +133,7 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | **Problem** | Monitor service delivery across five global transaction processes |
 | **Solution** | Trend analysis, anomaly detection & monthly performance evaluation |
 | **Stack** | `Python` `Pandas` `Anomaly Detection` |
-| **Context** | Business Data & Analytics assignment — UNICEF Global Shared Services Centre |
+| **Context** | Business Data & Analytics assignment · UNICEF Global Shared Services Centre |
 
 <br/>
 
@@ -221,17 +221,17 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 
 ```mermaid
 flowchart LR
-    A[(Raw Data)] --> B[SQL / ETL / PostgreSQL]
-    B --> C[ML & Forecasting]
-    C --> D[Explainability & Metrics]
-    D --> E[Tableau / Power BI / Streamlit]
-    E --> F((Business Decisions))
+ A[(Raw Data)] --> B[SQL / ETL / PostgreSQL]
+ B --> C[ML & Forecasting]
+ C --> D[Explainability & Metrics]
+ D --> E[Tableau / Power BI / Streamlit]
+ E --> F((Business Decisions))
 ```
 
-- **Production mindset** — leakage-safe features, class imbalance, reproducible pipelines  
-- **Stakeholder fluency** — executive dashboards, not just model scores  
-- **Full-stack analytics** — ingest → model → visualize → recommend  
-- **AI-native builder** — LLM agents with real automation (scraping, PDF, APIs)
+- **Production mindset** · leakage-safe features, class imbalance, reproducible pipelines
+- **Stakeholder fluency** · executive dashboards, not just model scores
+- **Full-stack analytics** · ingest → model → visualize → recommend
+- **AI-native builder** · LLM agents with real automation (scraping, PDF, APIs)
 
 ---
 
@@ -239,7 +239,7 @@ flowchart LR
 
 <div align="center">
 
-If you're hiring for **Data Science**, **ML Engineering**, **Data Analytics**, **Business Analytics**, or **Data Engineering** — I'd love to chat.
+If you're hiring for **Data Science**, **ML Engineering**, **Data Analytics**, **Business Analytics**, or **Data Engineering** · I'd love to chat.
 
 <br/>
 
@@ -249,6 +249,6 @@ If you're hiring for **Data Science**, **ML Engineering**, **Data Analytics**, *
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=100&section=footer&text=Thanks%20for%20visiting!%20%E2%80%94%20Let's%20build%20something%20impactful.&fontSize=16&fontColor=ffffff&animation=twinkling" alt="Footer wave" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=100&section=footer&text=Thanks%20for%20visiting!%20%C2%B7%20Let's%20build%20something%20impactful.&fontSize=16&fontColor=ffffff&animation=twinkling" alt="Footer wave" />
 
 </div>
