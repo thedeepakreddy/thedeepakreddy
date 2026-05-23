@@ -1,12 +1,12 @@
-<!-- Professional GitHub Profile README — Gorisi Deepak Reddy -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&width=700&lines=Gorisi+Deepak+Reddy;Data+Scientist+%7C+ML+Engineer;Analytics+%26+Decision+Systems" alt="Typing intro" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=180&section=header&text=Gorisi%20Deepak%20Reddy&fontSize=42&fontColor=ffffff&animation=twinkling" alt="header"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=650&lines=Data+Scientist+%7C+ML+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=thedeepakreddy&label=Profile+views&color=6366f1&style=for-the-badge" alt="Profile views" />
+<img src="https://komarev.com/ghpvc/?username=thedeepakreddy&label=Profile+views&color=3fb950&style=for-the-badge" alt="Profile views" />
 
 <br/><br/>
 
