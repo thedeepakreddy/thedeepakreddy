@@ -18,7 +18,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thedeepakreddy)
 [![Email](https://img.shields.io/badge/Email-thedeepakreddy1%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thedeepakreddy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/thedeepakreddy](https://www.linkedin.com/in/deepak-reddy-038582223/))
 
 </div>
 
