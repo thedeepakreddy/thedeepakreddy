@@ -47,7 +47,7 @@ Turn complex operational and economic data into **clear forecasts, risk scores, 
 | 🛠️ **Strength** | PostgreSQL → Python/ML → Tableau/Streamlit |
 | 📍 **Location** | Budapest, Hungary (EU) |
 | 🚀 **Now** | Shipping analytics & LLM automation projects |
-| 💼 **Open to** | Data Scientist · ML Engineer · Analytics Engineer · BI Developer |
+| 💼 **Open to** | Data Analyst · ML Engineer · Analytics Engineer · BI Developer · Business Analyst · Data Engineer |
 
 </td>
 </tr>
