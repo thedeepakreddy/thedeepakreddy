@@ -4,7 +4,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=180&section=header&text=Gorisi%20Deepak%20Reddy&fontSize=42&fontColor=ffffff&animation=twinkling" alt="header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=650&lines=Data+Scientist+%7C+ML+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=650&lines=Data+Analyst+%7C+ML+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
 
 <br/>
 
