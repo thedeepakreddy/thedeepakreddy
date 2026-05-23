@@ -4,7 +4,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=180&section=header&text=Gorisi%20Deepak%20Reddy&fontSize=42&fontColor=ffffff&animation=twinkling" alt="header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=650&lines=Data+Analyst+%7C+ML+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=4000&pause=900&color=3FB950&center=true&vCenter=true&width=650&lines=Data+Scientist+%7C+ML+Engineer;Predictive+ML+%26+Time+Series+Forecasting;SQL%2FETL+%E2%86%92+Tableau+%E2%86%92+Decision+Systems;Building+AI+Agents+with+LLMs" alt="typing intro"/>
 
 <br/>
 
@@ -28,32 +28,26 @@
 
 ## 👋 About Me
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**Who I am**  
-MSc **Business Data Analytics** graduate based in **Budapest**, building end-to-end analytics products — from SQL pipelines and ML models to executive dashboards and AI agents.
-
-**What I do best**  
-Turn complex operational and economic data into **clear forecasts, risk scores, and decisions** that teams can act on immediately.
-
-</td>
-<td width="50%" valign="top">
+I'm **Gorisi Deepak Reddy**, an MSc **Business Data Analytics** graduate based in **Budapest, Hungary**, focused on building analytics products that move from raw data to real business decisions. I work across the full stack of analytics — **SQL/ETL pipelines**, **predictive ML & time-series forecasting**, and **Tableau / Streamlit dashboards** — so stakeholders get answers they can trust and act on, not just model outputs in a notebook.
 
 | | |
-|---|---|
-| 🎯 **Focus** | Predictive ML · Time Series · ETL/SQL · BI |
-| 🛠️ **Strength** | PostgreSQL → Python/ML → Tableau/Streamlit |
-| 📍 **Location** | Budapest, Hungary (EU) |
-| 🚀 **Now** | Shipping analytics & LLM automation projects |
-| 💼 **Open to** | Data Analyst · ML Engineer · Analytics Engineer · BI Developer · Business Analyst · Data Engineer |
+|:---|:---|
+| 🎯 **Role** | Data Scientist · ML Engineer · Analytics Consultant |
+| 🔬 **Focus** | Predictive ML · Time Series · ETL/SQL · BI & Decision Systems |
+| 🛠️ **Strength** | PostgreSQL → Python/Scikit-Learn → Tableau/Power BI/Streamlit |
+| 📍 **Location** | Budapest, Hungary — open to roles across the EU |
+| 🚀 **Currently** | Shipping production-style analytics & LLM automation projects |
+| 💼 **Open to** | Data Scientist · ML Engineer · Analytics Engineer · BI Developer |
 
-</td>
-</tr>
-</table>
+**What I've built recently**
 
-**Recent highlights:** last-mile SLA & cost analytics (Budapest) · MSc capstone on trade-policy risk (**RMSE 0.0412**) · inflation forecasting on 24+ years of macro data · UNICEF transaction monitoring · AI job-application agent (Playwright + Groq).
+- **Last-mile delivery analytics (Budapest)** — end-to-end pipeline auditing SLA breaches and financial bleed; Random Forest for pre-dispatch delay prediction; executive Tableau dashboard with spatial routing insights.
+- **MSc capstone — trade policy & sourcing risk** — ML decision support system for tariff-shock impact; Random Forest with **RMSE 0.0412** and actionable sourcing recommendations.
+- **Inflation forecasting** — Prophet, SARIMAX & XGBoost on **24+ years** of macro data with automated RMSE/MAPE benchmarking and Tableau visual analytics.
+- **UNICEF transaction analysis** — trend monitoring, anomaly detection & service-delivery performance across five global processes.
+- **AutoCV (AI job agent)** — Streamlit app using Playwright + Groq Llama-3 to tailor resumes and cover letters per job posting.
+
+I care about **leakage-safe modeling**, clear evaluation metrics, and designs that executives and operators can actually use day to day.
 
 ---
 
