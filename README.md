@@ -22,6 +22,8 @@
 [![Email](https://img.shields.io/badge/Email-thedeepakreddy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepak-reddy-038582223/)
 
+<img src="https://user-images.githubusercontent.com/74038167/212284100-5615d651-4051-498fe8-bee1-243a56f14da7.gif" width="900" alt="animated divider"/>
+
 </div>
 
 ---
@@ -61,7 +63,11 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | **AI Product** | End-to-end job-application agent · Playwright + Groq Llama-3 |
 | **Public repos** | **6** end-to-end analytics & ML projects (pinned below) |
 
----
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=70&section=header&text=%E2%AD%90%20Featured%20Projects&fontSize=26&fontColor=ffffff&animation=twinkling" width="100%" alt="Featured Projects"/>
+
+</div>
 
 ## ⭐ Featured Projects
 
@@ -78,6 +84,18 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | **Solution** | PostgreSQL audit pipeline → Random Forest SLA predictor → Tableau exec dashboard |
 | **Stack** | `PostgreSQL` `Python` `Scikit-Learn` `Tableau` `Pandas` |
 | **Impact** | Flagged 5+ min SLA violations, 10%+ route cost bleed; spatial Buda · Pest routing insights |
+
+<div align="center">
+
+**📊 Tableau Dashboard Preview**
+
+<a href="https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest">
+<img src="https://raw.githubusercontent.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest/main/assets/dashboard.png" alt="Last-Mile Tableau Dashboard" width="92%"/>
+</a>
+
+*Executive SLA & financial bleed monitoring · Budapest last-mile network*
+
+</div>
 
 <br/>
 
@@ -107,6 +125,18 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | **Stack** | `Prophet` `SARIMAX` `XGBoost` `Python` `Tableau` |
 | **Impact** | Rigorous model benchmarking on **24 years** of macroeconomic data |
 
+<div align="center">
+
+**📊 Tableau Dashboard Preview**
+
+<a href="https://github.com/thedeepakreddy/Inflation-Forecasting-Decision-System">
+<img src="https://raw.githubusercontent.com/thedeepakreddy/Inflation-Forecasting-Decision-System/main/assets/dashboard_screenshot.png" alt="Inflation Forecasting Tableau Dashboard" width="92%"/>
+</a>
+
+*Interactive inflation forecasting dashboard · Prophet, SARIMAX & XGBoost benchmarks*
+
+</div>
+
 <br/>
 
 ### 🤖 AutoCV · AI Job Application Generator
@@ -135,6 +165,18 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | **Stack** | `Python` `Pandas` `Anomaly Detection` |
 | **Context** | Business Data & Analytics assignment · UNICEF Global Shared Services Centre |
 
+<div align="center">
+
+**📊 Dashboard Preview**
+
+<a href="https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis">
+<img src="https://raw.githubusercontent.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis/main/assets/unicef.png" alt="UNICEF Transaction Analysis Dashboard" width="92%"/>
+</a>
+
+*Transaction volume trends, anomalies & service delivery performance*
+
+</div>
+
 <br/>
 
 <details>
@@ -149,6 +191,20 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 | [UNICEF-Transaction-Volume-Analysis](https://github.com/thedeepakreddy/UNICEF-Transaction-Volume-Analysis) | 🌐 NGO | Transaction volume & anomaly analytics |
 
 </details>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=70&section=header&text=%F0%9F%9B%A0%EF%B8%8F%20Tech%20Stack&fontSize=26&fontColor=ffffff&animation=twinkling" width="100%" alt="Tech Stack"/>
+
+<img src="https://user-images.githubusercontent.com/74038167/212284158-93972036-20ce-4640-8b1b-512b2e308020.gif" width="40" alt="tools animation"/>
+
+<br/>
+
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=python,postgres,mysql,pandas,tensorflow,sklearn,tableau,aws,git,github,streamlit,jupyter&perline=6&theme=dark" alt="Animated skill icons"/>
+</a>
+
+</div>
 
 ---
 
@@ -199,6 +255,12 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 </tr>
 </table>
 
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=70&section=header&text=%F0%9F%93%8A%20GitHub%20Analytics&fontSize=26&fontColor=ffffff&animation=twinkling" width="100%" alt="GitHub Analytics"/>
+
+</div>
+
 ---
 
 ## 📊 GitHub Analytics
@@ -233,6 +295,14 @@ flowchart LR
 - **Full-stack analytics** · ingest → model → visualize → recommend
 - **AI-native builder** · LLM agents with real automation (scraping, PDF, APIs)
 
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1200&color=3FB950&center=true&vCenter=true&width=700&lines=Data+%E2%86%92+Models+%E2%86%92+Dashboards+%E2%86%92+Decisions;Building+impactful+analytics+products;Open+to+collaborate+on+ML+%26+BI+projects" alt="workflow animation"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=70&section=header&text=%F0%9F%93%AC%20Let%27s%20Connect&fontSize=26&fontColor=ffffff&animation=twinkling" width="100%" alt="Let's Connect"/>
+
+</div>
+
 ---
 
 ## 📬 Let's Connect
@@ -246,6 +316,8 @@ If you're hiring for **Data Science**, **ML Engineering**, **Data Analytics**, *
 [![GitHub](https://img.shields.io/badge/GitHub-thedeepakreddy-181717?style=for-the-badge&logo=github)](https://github.com/thedeepakreddy)
 [![Email](https://img.shields.io/badge/Email-Reach%20Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thedeepakreddy@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepak-reddy-038582223/)
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=Without+data%2C+you%27re+just+another+person+with+an+opinion.&author=W.+Edwards+Deming&border=true&bgColor=0e4429&titleColor=3fb950&textColor=ffffff" alt="animated quote"/>
 
 <br/>
 
