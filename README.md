@@ -32,12 +32,12 @@ I'm **Gorisi Deepak Reddy**, an MSc **Business Data Analytics** graduate based i
 
 | | |
 |:---|:---|
-| 🎯 **Role** | Data Scientist · ML Engineer · Analytics Consultant |
+| 🎯 **Role** | Data Scientist · ML Engineer · Data Analyst · Business Analyst · Data Engineer |
 | 🔬 **Focus** | Predictive ML · Time Series · ETL/SQL · BI & Decision Systems |
 | 🛠️ **Strength** | PostgreSQL → Python/Scikit-Learn → Tableau/Power BI/Streamlit |
 | 📍 **Location** | Budapest, Hungary — open to roles across the EU |
 | 🚀 **Currently** | Shipping production-style analytics & LLM automation projects |
-| 💼 **Open to** | Data Scientist · ML Engineer · Analytics Engineer · BI Developer |
+| 💼 **Open to** | Data Scientist · ML Engineer · Data Analyst · Business Analyst · Data Engineer |
 
 **What I've built recently**
 
@@ -165,15 +165,22 @@ I care about **leakage-safe modeling**, clear evaluation metrics, and designs th
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)
 
 </td>
 <td valign="top" width="33%">
 
-**ML & Forecasting**
+**ML, Deep Learning & Forecasting**
 <br/><br/>
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-189AD3?style=flat-square&logo=xgboost&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![ANNs](https://img.shields.io/badge/ANNs-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![CNNs](https://img.shields.io/badge/CNNs-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![RNNs](https://img.shields.io/badge/RNNs-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![ARIMA](https://img.shields.io/badge/ARIMA-0066CC?style=flat-square&logo=python&logoColor=white)
+![SARIMA](https://img.shields.io/badge/SARIMA-0066CC?style=flat-square&logo=python&logoColor=white)
 ![Prophet](https://img.shields.io/badge/Prophet-1877F2?style=flat-square&logo=meta&logoColor=white)
 ![SHAP](https://img.shields.io/badge/SHAP-FF6B6B?style=flat-square&logo=python&logoColor=white)
 
@@ -232,7 +239,7 @@ flowchart LR
 
 <div align="center">
 
-If you're hiring for **Data Science**, **ML Engineering**, **Analytics Engineering**, or **BI** — I'd love to chat.
+If you're hiring for **Data Science**, **ML Engineering**, **Data Analytics**, **Business Analytics**, or **Data Engineering** — I'd love to chat.
 
 <br/>
 
