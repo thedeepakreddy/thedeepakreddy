@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="12" viewBox="0 0 900 12" role="img" aria-label="animated divider">
+  <defs>
+    <linearGradient id="base" x1="0" x2="1">
+      <stop offset="0" stop-color="#0e4429" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#238636" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#0e4429" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" x2="1">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7ee787" stop-opacity="1"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="5" width="900" height="3" rx="1.5" fill="url(#base)"/>
+  <rect y="2" width="280" height="8" rx="4" fill="url(#beam)">
+    <animate attributeName="x" values="-280;900" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+  <circle cy="6" r="3" fill="#7ee787">
+    <animate attributeName="cx" values="-10;910" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
