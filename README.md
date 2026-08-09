@@ -4,7 +4,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4429,50:238636,100:3fb950&height=200&section=header&text=Gorisi%20Deepak%20Reddy&fontSize=46&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Data%20Science%20%C2%B7%20Machine%20Learning%20%C2%B7%20AI%20Engineering%20%C2%B7%20Business%20Intelligence&descAlignY=58&descSize=16" alt="header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=800&color=3FB950&center=true&vCenter=true&width=880&lines=Data+Scientist+%7C+ML+Engineer+%7C+AI+Engineer;Data+Analyst+%7C+Data+Engineer+%7C+BI+Developer;I+ship+the+whole+chain%3A+SQL+-%3E+ML+-%3E+Dashboard+-%3E+Decision;Every+number+below+is+computed%2C+never+narrated" alt="typing intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=800&color=3FB950&center=true&vCenter=true&width=880&lines=Data+Scientist+%7C+ML+Engineer+%7C+AI+Engineer;Data+Analyst+%7C+Data+Engineer+%7C+BI+Developer;I+ship+the+whole+chain%3A+SQL+-%3E+ML+-%3E+Dashboard+-%3E+Decision" alt="typing intro"/>
 
 <br/>
 
