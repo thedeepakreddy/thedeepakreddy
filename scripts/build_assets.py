@@ -39,14 +39,14 @@ EDUCATION = ["BSc Computer Science Engineering", "MSc Business Data Analytics"]
 
 TOOLKIT = [
     ("LANGUAGES", ["Python", "TypeScript", "JavaScript", "SQL", "Swift", "Rust"]),
-    ("AGENTS", ["Claude Agent SDK", "Gemini", "Ollama", "MCP", "tool calling", "structured outputs",
+    ("AGENTS", ["Claude Agent SDK", "Gemini", "Ollama", "MCP", "LangGraph", "tool calling", "structured outputs",
                 "agent memory", "workflow learning", "multi-agent orchestration", "replay + recovery",
                 "verification-driven execution"]),
     ("AI / ML", ["PyTorch", "Transformers", "Qwen 2.5-VL", "GRPO", "scikit-learn", "XGBoost", "SHAP",
                  "TensorFlow", "Keras", "Prophet", "SARIMAX", "embeddings", "RAG"]),
-    ("BACKEND + DATA", ["FastAPI", "Node.js", "Express", "PostgreSQL", "SQLite", "Pandas", "NumPy", "ETL",
+    ("BACKEND + DATA", ["FastAPI", "Node.js", "Express", "PostgreSQL", "Redis", "SQLite", "Pandas", "NumPy", "ETL",
                         "REST", "WebSockets"]),
-    ("FRONTEND + APPS", ["React", "Vite", "Electron", "Tauri", "Recharts", "Streamlit", "Tableau", "Power BI"]),
+    ("FRONTEND + APPS", ["React", "Vite", "Electron", "Tauri", "Chrome MV3", "Recharts", "Streamlit", "Tableau", "Power BI"]),
     ("SYSTEMS", ["WebRTC", "macOS automation", "accessibility APIs", "OCR", "Docker", "GitHub Actions",
                  "Render", "Vercel", "Google Cloud"]),
 ]
@@ -55,7 +55,7 @@ TOOLKIT_ACCENT = "AGENTS"
 SECTIONS = [
     ("about", "01", "Principle", "how I think about AI systems"),
     ("echo", "02", "Flagship: Echo", "a local-first agent runtime for macOS"),
-    ("work", "03", "Featured work", "products built around real users"),
+    ("work", "03", "Featured work", "research, platforms and products"),
     ("analytics", "04", "Analytics + applied ML", "models that end in a decision"),
     ("toolkit", "05", "Toolkit", "what I build with"),
     ("roles", "06", "Target roles", "where I fit"),
@@ -442,6 +442,69 @@ def echo():
                "partial and failed operations separately. Brains switch live between Claude, Gemini and local Ollama.", css)
 
 
+# ───────────────────────── ECHO ECOSYSTEM ───────────────────────
+def echo_family():
+    W, H = 1200, 326
+    css = cycle_css("tier", 4, 1.5, fade=0.1, shift=False)
+    b = [t(56, 58, "ECHO ECOSYSTEM", size=14, fill=MUTE, ls=2.6),
+         t(1144, 58, "one agent, three surfaces", size=14, fill=DIM, anchor="end")]
+    bw, by, bh = 320, 86, 196
+    xs = [56, 440, 824]
+
+    def box(x, kind, title, l1, l2, live=False, accent=LINE2):
+        s = f'<rect x="{x}" y="{by}" width="{bw}" height="{bh}" rx="14" fill="{PANEL}" stroke="{accent}"/>'
+        s += t(x + 22, by + 34, kind, size=12.5, fill=MUTE, ls=2)
+        if live:
+            s += (f'<rect x="{x + bw - 90}" y="{by + 17}" width="70" height="26" rx="13" fill="{BG}" stroke="{OK}"/>'
+                  f'<circle class="pulse" cx="{x + bw - 73}" cy="{by + 30}" r="4" fill="{OK}"/>{t(x + bw - 62, by + 35, "LIVE", size=12.5, fill=OK, ls=1.5, weight=700)}')
+        s += t(x + 21, by + 72, title, cls="s", size=28, weight=800, ls=-.6)
+        s += t(x + 22, by + 98, l1, size=13.5, fill=MUTE) + t(x + 22, by + 118, l2, size=13.5, fill=MUTE)
+        return s
+
+    # phone
+    x = xs[0]
+    b.append(box(x, "PHONE", "Echo Phone", "standalone assistant", "optional relay to Echo on your Mac", live=True))
+    cx_ = x + 22
+    for c_ in ["Today", "Bots", "Briefing", "Brain"]:
+        c, w, h = chip(cx_, by + 144, c_, size=12.5, color=TEXT, fill=BG, pad=10)
+        b.append(c)
+        cx_ += w + 7
+    # mac
+    x = xs[1]
+    b.append(box(x, "MAC · FLAGSHIP", "Echo Mac", "local-first agent runtime", "sees, acts, verifies on the desktop", accent=OK))
+    cx_ = x + 22
+    for i, c_ in enumerate(["perceive", "act", "verify"]):
+        c, w, h = chip(cx_, by + 144, c_, size=12.5, color=OK if c_ == "verify" else TEXT, stroke=OK if c_ == "verify" else LINE2, fill=BG, pad=10)
+        b.append(c)
+        cx_ += w
+        if i < 2:
+            b.append(f'<line x1="{cx_:.0f}" y1="{by + 157.5}" x2="{cx_ + 16:.0f}" y2="{by + 157.5}" stroke="{OK}" stroke-width="1.8" class="flow"/>')
+        cx_ += 16
+    # browser
+    x = xs[2]
+    b.append(box(x, "CHROME MV3", "Echo Online", "tab agents with approval gates", "MCP bridge to Claude Desktop/Code"))
+    cx_ = x + 22
+    for i, c_ in enumerate(["instant", "cached", "device", "cloud"]):
+        w = mw(c_, 12.5) + 18
+        b.append(f'<rect x="{cx_:.0f}" y="{by + 144}" width="{w:.0f}" height="27.5" rx="13.75" fill="{BG}" stroke="{LINE2}"/>')
+        b.append(f'<rect class="tier{" rm" if i == 0 else ""}" x="{cx_:.0f}" y="{by + 144}" width="{w:.0f}" height="27.5" rx="13.75" fill="#12261E" stroke="{OK}" style="animation-delay:{i * 1.5:.1f}s"/>')
+        b.append(t(cx_ + 9, by + 162.4, c_, size=12.5, fill=TEXT))
+        cx_ += w + 6
+    # connectors
+    y = by + bh / 2
+    for xa, xb, lab in ((xs[0] + bw, xs[1], "relay"),):
+        b.append(f'<line x1="{xa}" y1="{y}" x2="{xb}" y2="{y}" stroke="{OK}" stroke-width="1.8" class="flow"/>')
+        w = mw(lab, 12) + 14
+        m = (xa + xb) / 2
+        b.append(f'<rect x="{m - w / 2:.1f}" y="{y - 11}" width="{w:.1f}" height="22" rx="11" fill="{BG}" stroke="{LINE2}"/>{t(m, y + 4.3, lab, size=12, fill=TEXT, anchor="middle")}')
+    b.append(t(xs[0], 309, "Your Mac never opens a port: Echo holds outgoing requests to the relay.", size=13, fill=DIM))
+    b.append(t(1144, 309, "four-tier routing tries local before cloud", size=13, fill=DIM, anchor="end"))
+    return doc(W, H, "".join(b),
+               "Echo ecosystem: Echo Phone, a standalone phone assistant with an optional relay to Echo on your Mac; Echo Mac, the "
+               "local-first agent runtime; and Echo Online, a Chrome extension with tab-scoped agents, four-tier local-first routing "
+               "and an MCP bridge to Claude Desktop and Claude Code.", css)
+
+
 # ───────────────────────── TRAINING LOOP ────────────────────────
 def training():
     W, H = 1200, 330
@@ -593,26 +656,175 @@ def ill_gita():
     return "".join(b), css
 
 
-def ill_analytics():
+def ill_syntra():
+    b, css = [], ""
+    roles_ = ["PM", "ARCH", "DEV", "QA", "SEC", "REVIEW"]
+    hashes = ["a3f9", "7c1e", "e02b", "5d88", "b41a", "9f60"]
+    css += cycle_css("hsh", 6, 1.1, fade=0.1, shift=False)
+    for i, (r_, h_) in enumerate(zip(roles_, hashes)):
+        x = 36 + i * 78
+        b.append(f'<rect x="{x}" y="164" width="64" height="32" rx="7" fill="{PANEL}" stroke="{LINE2}"/>')
+        b.append(f'<rect class="hsh{" rm" if i == 3 else ""}" x="{x}" y="164" width="64" height="32" rx="7" fill="{OK}" fill-opacity=".12" stroke="{OK}" style="animation-delay:{i * 1.1:.1f}s"/>')
+        b.append(t(x + 32, 185, r_, size=12.5, fill=TEXT, anchor="middle", ls=1))
+        b.append(t(x + 32, 214, "#" + h_, size=11.5, fill=DIM, anchor="middle"))
+        b.append(f'<line x1="{x + 64}" y1="180" x2="{x + 78}" y2="180" stroke="{OK}" stroke-width="1.8" class="flow"/>')
+    b.append(f'<rect x="504" y="164" width="60" height="32" rx="7" fill="{PANEL2}" stroke="{WARN}"/>')
+    b.append(f'<path d="M529 178v-3a5 5 0 0 1 10 0v3" fill="none" stroke="{WARN}" stroke-width="1.8"/><rect x="526" y="178" width="16" height="12" rx="2.5" fill="{WARN}"/>')
+    b.append(t(534, 214, "human gate", size=11.5, fill=WARN, anchor="middle"))
+    # task DAG
+    nodes = [(56, 270), (150, 248), (150, 292), (250, 248), (250, 292), (350, 270), (450, 270)]
+    edges = [(0, 1), (0, 2), (1, 3), (2, 4), (1, 4), (3, 5), (4, 5), (5, 6)]
+    for a, c in edges:
+        (x1, y1), (x2, y2) = nodes[a], nodes[c]
+        b.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{LINE2}" stroke-width="1.5"/>')
+    cyc = 8.0
+    for i, (x, y) in enumerate(nodes):
+        a = (0.4 + i * 0.8) / cyc * 100
+        css += (f"@keyframes dg{i}{{0%,{a:.2f}%{{opacity:0}}{a + 3:.2f}%,94%{{opacity:1}}100%{{opacity:0}}}}"
+                f".dg{i}{{animation:dg{i} {cyc}s linear infinite}}")
+        b.append(f'<circle cx="{x}" cy="{y}" r="9" fill="{BG}" stroke="{LINE2}" stroke-width="1.5"/>')
+        b.append(f'<g class="dg{i} rm"><circle cx="{x}" cy="{y}" r="9" fill="#14402E" stroke="{OK}" stroke-width="1.5"/>{check(x, y, s=.75, sw=1.8)}</g>')
+    b.append(t(564, 266, "cycle-free", size=12, fill=MUTE, anchor="end"))
+    b.append(t(564, 283, "task graph", size=12, fill=MUTE, anchor="end"))
+    return "".join(b), css
+
+
+def ill_atlas():
     b = []
-    css = ("@keyframes draw2{0%{stroke-dashoffset:420}40%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:420}}"
-           ".draw2{stroke-dasharray:420;animation:draw2 7s ease-in-out infinite}"
-           "@keyframes band{0%,35%{opacity:0}55%,88%{opacity:1}100%{opacity:0}}.band{animation:band 7s ease-in-out infinite}")
-    for y in (190, 230, 270):
-        b.append(f'<line x1="40" y1="{y}" x2="560" y2="{y}" stroke="{LINE}" stroke-dasharray="2 6"/>')
-    hist = "M40 276L72 262L104 268L136 244L168 250L200 226L232 236L264 214L296 220L330 204"
-    b.append(f'<path class="draw2" d="{hist}" fill="none" stroke="{TEXT}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>')
-    b.append(f'<g class="band rm"><path d="M330 204L400 184L470 168L560 146L560 204L470 204L400 204Z" fill="{OK}" opacity=".13"/>'
-             f'<path d="M330 204L400 194L470 186L560 175" fill="none" stroke="{OK}" stroke-width="2.4" stroke-dasharray="6 6" stroke-linecap="round"/>'
-             f'<circle cx="560" cy="175" r="4.5" fill="{OK}"/></g>')
-    b.append(f'<line x1="330" y1="162" x2="330" y2="300" stroke="{WARN}" stroke-dasharray="3 4"/>')
-    b.append(t(338, 298, "decision point", size=12, fill=WARN))
-    b.append(t(40, 298, "history", size=12, fill=DIM))
-    b.append(t(560, 298, "forecast ± band", size=12, fill=OK, anchor="end"))
+    ox, oy, s = 172, 177, 25
+
+    def iso(x, y, z=0):
+        return ox + (x - y) * 0.866 * s, oy + (x + y) * 0.5 * s - z * s
+
+    def P(*p):
+        x, y = iso(*p)
+        return f"{x:.1f} {y:.1f}"
+
+    for i in range(6):
+        b.append(f'<path d="M{P(i, 0)}L{P(i, 5)}M{P(0, i)}L{P(5, i)}" stroke="{LINE2}" stroke-width="1" fill="none"/>')
+
+    def cuboid(x, y, w, d, h, col, dash="", fo=.1):
+        top = f"M{P(x, y, h)}L{P(x + w, y, h)}L{P(x + w, y + d, h)}L{P(x, y + d, h)}Z"
+        left = f"M{P(x, y + d, 0)}L{P(x + w, y + d, 0)}L{P(x + w, y + d, h)}L{P(x, y + d, h)}Z"
+        right = f"M{P(x + w, y, 0)}L{P(x + w, y + d, 0)}L{P(x + w, y + d, h)}L{P(x + w, y, h)}Z"
+        da = f' stroke-dasharray="{dash}"' if dash else ""
+        return "".join(f'<path d="{p}" fill="{col}" fill-opacity="{f_}" stroke="{col}" stroke-width="1.4" stroke-linejoin="round"{da}/>'
+                       for p, f_ in ((left, fo * .7), (right, fo * .4), (top, fo)))
+
+    b.append(cuboid(.4, .5, 1.1, 1.1, 1.5, INFO))
+    b.append(cuboid(3.4, .6, 1.2, 1, .8, MUTE))
+    css = cycle_css("mv", 3, 1.8, fade=0.12, shift=False)
+    for i, (x, y) in enumerate([(.6, 3.6), (2.0, 3.5), (3.5, 3.3)]):
+        b.append(cuboid(x, y, .8, .8, .7, DIM, dash="3 3", fo=0))
+        b.append(f'<g class="mv{" rm" if i == 2 else ""}" style="animation-delay:{i * 1.8:.1f}s">{cuboid(x, y, .8, .8, .7, OK, fo=.22)}'
+                 f'{t(iso(x + .4, y + .4, 1.2)[0], iso(x + .4, y + .4, 1.2)[1], "t" + str(i), size=12, fill=OK, anchor="middle")}</g>')
+    b.append(t(330, 178, "WORLD MEMORY", size=12, fill=DIM, ls=2))
+    rows = [("chair", "stable", MUTE), ("cup", "moved t0 → t2", OK), ("door", "open", INFO), ("lamp", "occluded", WARN)]
+    for i, (n_, st, c) in enumerate(rows):
+        y = 190 + i * 28
+        b.append(f'<rect x="330" y="{y}" width="234" height="22" rx="5" fill="{PANEL}" stroke="{LINE}"/>')
+        b.append(f'<circle cx="343" cy="{y + 11}" r="3.5" fill="{c}"/>')
+        b.append(t(354, y + 15.5, n_, size=12.5, fill=TEXT))
+        b.append(t(556, y + 15.5, st, size=12, fill=c, anchor="end"))
+    return "".join(b), css
+
+
+def ill_pluto():
+    b = []
+    css = ("@keyframes drawp{0%{stroke-dashoffset:330}45%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:330}}"
+           ".drawp{stroke-dasharray:330;animation:drawp 7s ease-in-out infinite}")
+    b.append(f'<path d="M44 162V262H300" fill="none" stroke="{LINE2}" stroke-width="1.5"/>')
+    pts = []
+    for i in range(41):
+        u = i / 40
+        x = 52 + u * 244
+        y = 250 - 80 * math.exp(-4.2 * u) + 2.2 * math.sin(i * 1.7) * (1 - u)
+        pts.append(f"{x:.1f} {y:.1f}")
+    b.append(f'<path class="drawp" d="M{" L".join(pts)}" fill="none" stroke="{OK}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>')
+    b.append(f'<line x1="104" y1="166" x2="104" y2="262" stroke="{WARN}" stroke-dasharray="3 4"/>')
+    b.append(t(110, 178, "interrupt → exact resume", size=11.5, fill=WARN))
+    stats = [("18 min", "6M params · free T4"), ("1.738", "val loss · M1"), ("18.8%", "WER · voice model M2")]
+    for i, (num, lab) in enumerate(stats):
+        y = 186 + i * 34
+        b.append(t(330, y, num, cls="s", size=22, fill=TEXT, weight=800))
+        b.append(t(420, y - 2, lab, size=12, fill=MUTE))
+    y = 298
+    b.append(f'<line x1="52" y1="{y}" x2="527" y2="{y}" stroke="{LINE2}" stroke-width="1.5"/>')
+    for i in range(6):
+        x = 52 + i * 95
+        if i < 2:
+            b.append(f'<circle cx="{x}" cy="{y}" r="8" fill="#14402E" stroke="{OK}" stroke-width="1.5"/>{check(x, y, s=.7, sw=1.8)}')
+            col = OK
+        elif i == 2:
+            b.append(f'<circle cx="{x}" cy="{y}" r="8" fill="{BG}" stroke="{WARN}" stroke-width="1.5"/><circle class="pulse" cx="{x}" cy="{y}" r="3.5" fill="{WARN}"/>')
+            col = WARN
+        else:
+            b.append(f'<circle cx="{x}" cy="{y}" r="8" fill="{BG}" stroke="{LINE2}" stroke-width="1.5"/>')
+            col = DIM
+        b.append(f'<rect x="{x + 12}" y="{y - 9}" width="26" height="18" fill="{BG}"/>')
+        b.append(t(x + 14, y + 4.5, f"M{i + 1}", size=12.5, fill=col, weight=700))
+    return "".join(b), css
+
+
+def ill_cosmos():
+    b = []
+    cx, cy, rx, ry = 300, 232, 196, 58
+    b.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{LINE2}" stroke-width="1.5"/>')
+    b.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{OK}" stroke-width="1.5" class="flow" opacity=".5"/>')
+    mods = ["research", "agents", "tools", "memory", "models", "evaluation"]
+    css = cycle_css("orb", 6, 1.3, fade=0.1, shift=False)
+    chips = []
+    for i, m_ in enumerate(mods):
+        a = math.radians(-90 + 30 + i * 60)
+        x, y = cx + rx * math.cos(a), cy + ry * math.sin(a)
+        b.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="{LINE2}" stroke-dasharray="2 5"/>')
+        w = mw(m_, 12.5) + 20
+        chips.append(f'<rect x="{x - w / 2:.1f}" y="{y - 13:.1f}" width="{w:.1f}" height="26" rx="13" fill="{PANEL}" stroke="{LINE2}"/>'
+                     f'<rect class="orb{" rm" if i == 1 else ""}" x="{x - w / 2:.1f}" y="{y - 13:.1f}" width="{w:.1f}" height="26" rx="13" fill="#12261E" stroke="{OK}" style="animation-delay:{i * 1.3:.1f}s"/>'
+                     f'{t(x, y + 4.5, m_, size=12.5, fill=TEXT, anchor="middle")}')
+    path = f"M{cx + rx} {cy}A{rx} {ry} 0 1 1 {cx - rx} {cy}A{rx} {ry} 0 1 1 {cx + rx} {cy}"
+    b.append(f'<circle r="4" fill="{OK}"><animateMotion dur="7.8s" repeatCount="indefinite" path="{path}"/></circle>')
+    b.append("".join(chips))
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="34" fill="{PANEL2}" stroke="{OK}" stroke-width="1.5"/>')
+    b.append(f'<circle class="pulse" cx="{cx}" cy="{cy}" r="42" fill="none" stroke="{OK}" stroke-opacity=".35"/>')
+    b.append(t(cx, cy - 1, "one", size=12, fill=MUTE, anchor="middle"))
+    b.append(t(cx, cy + 14, "layer", size=12, fill=OK, anchor="middle", weight=700))
+    return "".join(b), css
+
+
+def ill_helpin():
+    b = []
+    b.append(f'<path d="M36 300C120 268 150 214 236 204S400 250 470 214S540 172 564 168" fill="none" stroke="{INFO}" stroke-width="14" opacity=".1" stroke-linecap="round"/>')
+    for d in ("M40 190H560", "M40 246H560", "M96 160V312", "M196 160V312", "M392 160V312", "M492 160V312", "M40 296L300 160", "M300 312L560 200"):
+        b.append(f'<path d="{d}" stroke="{LINE}" stroke-width="1.5" fill="none"/>')
+    for x, y, r_ in ((112, 204, 24), (474, 274, 22), (130, 284, 17), (508, 190, 16)):
+        b.append(f'<circle cx="{x}" cy="{y}" r="{r_}" fill="{MUTE}" fill-opacity=".06" stroke="{LINE2}" stroke-dasharray="3 4"/><circle cx="{x}" cy="{y}" r="3" fill="{DIM}"/>')
+    ax, ay, hx, hy = 300, 212, 214, 274
+    css = ("@keyframes area{0%,100%{r:30;opacity:.9}50%{r:38;opacity:.4}}.area{animation:area 2.4s ease-in-out infinite}")
+    css += cycle_css("hst", 3, 2.6, fade=0.1, shift=False)
+    b.append(f'<circle class="area" cx="{ax}" cy="{ay}" r="30" fill="{WARN}" fill-opacity=".08" stroke="{WARN}" stroke-dasharray="4 4"/>')
+    b.append(f'<line x1="{hx}" y1="{hy}" x2="{ax}" y2="{ay}" stroke="{OK}" stroke-width="1.5" class="flow"/>')
+    b.append(f'<circle r="4" fill="{OK}"><animateMotion dur="2.6s" repeatCount="indefinite" path="M{hx} {hy}L{ax} {ay}"/></circle>')
+    b.append(f'<circle cx="{ax}" cy="{ay}" r="6" fill="{WARN}"/>')
+    b.append(f'<circle cx="{hx}" cy="{hy}" r="9" fill="{BG}" stroke="{OK}" stroke-width="1.5"/><circle cx="{hx}" cy="{hy}" r="4" fill="{OK}"/>')
+    b.append(t(hx, hy + 26, "neighbour", size=11.5, fill=OK, anchor="middle"))
+    states = [("asked: a letter I can't read", WARN), ("a neighbour offers help", INFO), ("solved · asker confirms · +karma", OK)]
+    for i, (s_, c) in enumerate(states):
+        w = mw(s_, 12) + 18
+        b.append(f'<g class="hst{" rm" if i == 2 else ""}" style="animation-delay:{i * 2.6:.1f}s"><rect x="342" y="199" width="{w:.0f}" height="26" rx="13" fill="{BG}" stroke="{c}"/>'
+                 f'{t(351, 216.5, s_, size=12, fill=c)}</g>')
     return "".join(b), css
 
 
 CARDS = [
+    ("syntra", "MULTI-AGENT SWE", "SYNTRA", "An AI engineering org: governed roles, hashed handoffs.",
+     "LangGraph · PostgreSQL · Docker sandboxes · FastAPI", False, ill_syntra),
+    ("atlas", "RESEARCH", "ATLAS", "Persistent, evidence-grounded spatial intelligence.",
+     "4D scenes · world memory · physical reasoning", False, ill_atlas),
+    ("pluto", "LLM FROM SCRATCH", "Pluto → Mini-Live", "Own tokenizer, GPT and training loop in plain PyTorch.",
+     "byte-level BPE · exact resume · speech + text", False, ill_pluto),
+    ("cosmos", "INTELLIGENCE INFRA", "CosmOS", "Specialised systems working as one intelligence layer.",
+     "modular operating systems · one coordination layer", True, ill_cosmos),
     ("aira", "AI WORKSPACE", "Aira.AI", "Cross-platform AI workspace behind a permission gateway.",
      "Tauri · MCP · OpenCode · server-side keys", False, ill_aira),
     ("studio", "DATA SCIENCE", "Data Science Studio", "Real server-side EDA and training; the LLM only narrates.",
@@ -623,8 +835,8 @@ CARDS = [
      "WebRTC · direct-to-disk streaming · calls", True, ill_transfer),
     ("gita", "RETRIEVAL", "Gita.AI", "Grounded in all 701 verses, not in model memory.",
      "embeddings · RAG · multilingual · donated to ISKCON", False, ill_gita),
-    ("analytics", "DECISION SCIENCE", "Analytics + applied ML", "Eight systems where the model ends in a decision.",
-     "forecasting · churn · risk · SQL · Tableau", False, ill_analytics),
+    ("helpin", "HYPERLOCAL", "HelpIn", "Neighbours solve real problems; the asker confirms.",
+     "map-first PWA · Postgres · Web Push · Budapest", True, ill_helpin),
 ]
 
 
@@ -769,7 +981,7 @@ def main():
     OUT.mkdir(exist_ok=True)
     files = {
         "hero.svg": hero(), "principle.svg": principle(), "echo.svg": echo(), "training-loop.svg": training(),
-        "toolkit.svg": toolkit(), "roles.svg": roles(), "footer.svg": footer(),
+        "echo-family.svg": echo_family(), "toolkit.svg": toolkit(), "roles.svg": roles(), "footer.svg": footer(),
         "btn-email.svg": button("Email", "thedeepakreddy1@gmail.com"),
         "btn-linkedin.svg": button("LinkedIn", "in/deepak-reddy"),
         "btn-github.svg": button("GitHub", "all repositories"),
