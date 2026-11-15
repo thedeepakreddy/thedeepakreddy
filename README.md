@@ -26,6 +26,7 @@ I do not treat a model as a source of truth. The model interprets intent, retrie
 | Where it shows up | What the principle looks like in practice |
 |---|---|
 | **Echo** | Observes, acts, verifies and updates state. A tool response is never taken as proof of success. |
+| **SYNTRA** | Agents hand off hashed, schema-validated artifacts, and no agent may verify its own output. |
 | **Data Science Studio** | Real Python services compute every metric. The LLM only explains results that already exist. |
 | **Gita.AI** | Retrieves from an embedding corpus of all **701 verses** instead of quoting from model memory. |
 | **Risk and forecasting systems** | Model outputs become transparent decision support, not unexplained predictions. |
@@ -34,9 +35,9 @@ I do not treat a model as a source of truth. The model interprets intent, retrie
 
 <p><img src="assets/h-echo.svg" width="100%" alt="02 · Flagship: Echo"/></p>
 
-<p><a href="https://github.com/thedeepakreddy/Echo-mac"><img src="assets/echo.svg" width="100%" alt="Echo, Executive Computer Heuristic Operator: perceive, plan, act, verify, recover, learn. Screen understanding, voice, an agent journal with verified, uncertain and partial states, and live brain switching between Claude, Gemini and Ollama."/></a></p>
+<p><a href="https://github.com/thedeepakreddy/E.C.H.O-Mac"><img src="assets/echo.svg" width="100%" alt="Echo, Executive Computer Heuristic Operator: perceive, plan, act, verify, recover, learn. Screen understanding, voice, an agent journal with verified, uncertain and partial states, and live brain switching between Claude, Gemini and Ollama."/></a></p>
 
-**[ECHO · Executive Computer Heuristic Operator](https://github.com/thedeepakreddy/Echo-mac)** is a working local-first autonomous agent runtime for macOS. It is an operating layer that combines perception, planning, tool execution, memory, verification, recovery and learning.
+**[ECHO · Executive Computer Heuristic Operator](https://github.com/thedeepakreddy/E.C.H.O-Mac)** is a working local-first autonomous agent runtime for macOS. It is an operating layer that combines perception, planning, tool execution, memory, verification, recovery and learning.
 
 <details>
 <summary><b>Everything Echo can do</b></summary>
@@ -60,6 +61,17 @@ I do not treat a model as a source of truth. The model interprets intent, retrie
 
 </details>
 
+<br/>
+
+<p><img src="assets/echo-family.svg" width="100%" alt="Echo ecosystem: Echo Phone, a standalone phone assistant with an optional relay to Echo on your Mac; Echo Mac, the local-first agent runtime; Echo Online, a Chrome extension with tab agents, four-tier local-first routing and an MCP bridge."/></p>
+
+| Surface | What it is | Links |
+|---|---|---|
+| **Echo Mac** | The flagship runtime: perception, planning, tools, memory, verification, recovery and learning on macOS. | [Repo](https://github.com/thedeepakreddy/E.C.H.O-Mac) |
+| **Echo Phone** | A standalone phone assistant with its own chat, bots, briefings and reminders. It can optionally pair with Echo on your Mac through a relay; the Mac never opens a port. | [Repo](https://github.com/thedeepakreddy/E.C.H.O-Phone) · [Live](https://echo-phone.onrender.com/) |
+| **Echo Online** | A local-first browser agent for Chrome (MV3). It reads and operates pages, learns a task by watching you once, runs tab-scoped agents, and asks before it pays or sends. Four-tier routing tries instant, cached and on-device answers before the cloud. Also an MCP server for Claude Desktop and Claude Code. | [Repo](https://github.com/thedeepakreddy/E.C.H.O-Web-Assistant-Extension) |
+| **DLLM** | The training notebook for Echo's own local brain: custom training of Qwen2.5-VL-7B for multimodal desktop orchestration. | [Repo](https://github.com/thedeepakreddy/DLLM) |
+
 <p><img src="assets/training-loop.svg" width="100%" alt="Agent training loop: frontier teacher, Echo trajectories, filter label verify, synthetic plus real dataset, Qwen 2.5-VL with GRPO, local multimodal agent, and new verified trajectories feeding back."/></p>
 
 Echo records frontier-model trajectories: observations, tool calls, actions, results and verification state. I use those verified trajectories plus synthetic data to fine-tune a **Qwen 2.5-VL** policy with **GRPO**, distilling reliable computer use into an efficient local model without losing tool correctness, safety or task verification.
@@ -69,31 +81,39 @@ Echo records frontier-model trajectories: observations, tool calls, actions, res
 <p><img src="assets/h-work.svg" width="100%" alt="03 · Featured work"/></p>
 
 <p align="center">
-<a href="https://github.com/thedeepakreddy/Aira.AI-Website"><img src="assets/card-aira.svg" width="49%" alt="Aira.AI: cross-platform AI workspace behind a permission gateway"/></a>
-<a href="https://github.com/thedeepakreddy/AskDeepakAI-DataScienceStudio"><img src="assets/card-studio.svg" width="49%" alt="Data Science Studio: real server-side EDA and training, the LLM only narrates"/></a>
+<a href="https://github.com/thedeepakreddy/SYNTRA"><img src="assets/card-syntra.svg" width="49%" alt="SYNTRA: autonomous multi-agent software engineering platform with governed roles and hashed handoffs"/></a>
+<a href="https://github.com/thedeepakreddy/ATLAS-spatial-intelligence"><img src="assets/card-atlas.svg" width="49%" alt="ATLAS: research on persistent, evidence-grounded spatial intelligence"/></a>
+<a href="https://github.com/thedeepakreddy/Pluto-LLM"><img src="assets/card-pluto.svg" width="49%" alt="Pluto: an LLM built from scratch in PyTorch, building toward Mini-Live"/></a>
+<a href="https://github.com/thedeepakreddy/CosmOS"><img src="assets/card-cosmos.svg" width="49%" alt="CosmOS: modular intelligence infrastructure platform"/></a>
+<a href="https://github.com/thedeepakreddy/Aira.AI"><img src="assets/card-aira.svg" width="49%" alt="Aira.AI: cross-platform AI workspace behind a permission gateway"/></a>
+<a href="https://github.com/thedeepakreddy/DataScienceStudio-AskDeepakAI"><img src="assets/card-studio.svg" width="49%" alt="Data Science Studio: real server-side EDA and training, the LLM only narrates"/></a>
 <a href="https://github.com/thedeepakreddy/Talktual"><img src="assets/card-talktual.svg" width="49%" alt="Talktual: real-time peer-to-peer voice translation"/></a>
 <a href="https://github.com/thedeepakreddy/Tata-Dransfer-by-AskDeepakAI"><img src="assets/card-transfer.svg" width="49%" alt="Tata Dransfer: encrypted peer-to-peer files, calls and chat, 100GB+"/></a>
 <a href="https://github.com/thedeepakreddy/Gita.AI"><img src="assets/card-gita.svg" width="49%" alt="Gita.AI: retrieval grounded in all 701 Bhagavad Gita verses"/></a>
-<a href="#analytics"><img src="assets/card-analytics.svg" width="49%" alt="Analytics and applied ML: eight decision systems"/></a>
+<a href="https://github.com/thedeepakreddy/HelpIn"><img src="assets/card-helpin.svg" width="49%" alt="HelpIn: hyperlocal, map-first mutual help for Budapest"/></a>
 </p>
 
 | Project | Why it exists | Links |
 |---|---|---|
-| **Aira.AI** | One AI workspace across web, macOS and Windows. Provider keys stay server-side behind an authenticated gateway; file, shell, subagent and tool actions need approval. Typed, unit and integration tested. | [Repo](https://github.com/thedeepakreddy/Aira.AI-Website) |
-| **Data Science Studio** | SQL, Python, ML and reporting for technical and non-technical users. Agentic reason-act-observe analysis, visual SQL builder, drift monitoring. No fabricated metrics. | [Repo](https://github.com/thedeepakreddy/AskDeepakAI-DataScienceStudio) · [Live](https://askdeepakai-datascientist.onrender.com/) |
+| **SYNTRA** | An autonomous multi-agent software engineering platform run like an engineering organization, not a chat room. Stateless roles are invoked under typed contracts and budgets, hand off SHA-256 hashed artifacts, and no agent may review or verify its own work. Code runs in isolated Docker sandboxes and nothing ships without a human gate. | [Repo](https://github.com/thedeepakreddy/SYNTRA) |
+| **ATLAS** | An independent research initiative on spatial intelligence: dynamic 4D scene understanding, persistent world memory, physical reasoning and embodied interaction, held in one evidence-grounded world model. | [Repo](https://github.com/thedeepakreddy/ATLAS-spatial-intelligence) |
+| **Pluto → Mini-Live** | A language model built from scratch in plain PyTorch: my own byte-level BPE tokenizer, GPT, and training loop with exact resume. M1 trained a 6M-parameter model in 18 minutes on a free T4; M2 is a first voice model at 18.8% WER. It is the foundation for Mini-Live, a real-time speech and text model. | [Repo](https://github.com/thedeepakreddy/Pluto-LLM) |
+| **CosmOS** | A modular intelligence infrastructure platform where specialised operating systems for research, agents, tools, memory, models and evaluation work as one coordinated layer. | [Repo](https://github.com/thedeepakreddy/CosmOS) · [Site](https://cosmos-website-8vir.onrender.com) |
+| **Aira.AI** | One AI workspace across web, macOS and Windows. Provider keys stay server-side behind an authenticated gateway; file, shell, subagent and tool actions need approval. Typed, unit and integration tested. | [Repo](https://github.com/thedeepakreddy/Aira.AI) |
+| **Data Science Studio** | SQL, Python, ML and reporting for technical and non-technical users. Agentic reason-act-observe analysis, visual SQL builder, drift monitoring. No fabricated metrics. | [Repo](https://github.com/thedeepakreddy/DataScienceStudio-AskDeepakAI) · [Live](https://askdeepakai-datascientist.onrender.com/) |
 | **Talktual** | Built from a real cross-cultural problem: two people without a shared language. QR handshake, push-to-talk, graceful fallback when speech services drop. | [Repo](https://github.com/thedeepakreddy/Talktual) · [Live](https://talktual.onrender.com/) |
 | **Tata Dransfer** | Past the limits of free file-transfer services: 100GB+ direct-to-disk streaming, AES-GCM encrypted chat and files, audio, video and screen sharing. | [Repo](https://github.com/thedeepakreddy/Tata-Dransfer-by-AskDeepakAI) · [Live](https://tata-dransfer-by-askdeepakai-1.onrender.com/) |
 | **Gita.AI** | Donated to ISKCON. Describe a personal problem and get semantically relevant verses, with source text kept separate from AI interpretation. Multilingual. | [Repo](https://github.com/thedeepakreddy/Gita.AI) |
+| **HelpIn** | A hyperlocal, map-first platform for mutual help in Budapest. People post real-world problems in an approximate area, neighbours help for free, and the asker confirms when it is solved. Not a gig marketplace: no prices, no paid work. | [Repo](https://github.com/thedeepakreddy/HelpIn) · [Live](https://helpin-ybt3.onrender.com/welcome) |
 
 <br/>
 
-<a name="analytics"></a>
 <p><img src="assets/h-analytics.svg" width="100%" alt="04 · Analytics and applied ML"/></p>
 
 | Project | Decision it supports | Methods |
 |---|---|---|
-| [Automated Risk Intelligence Analyst](https://github.com/thedeepakreddy/Automated-Risk-Intelligence-Analyst) | How exposed are we right now, and why? | Market and news ingestion, transparent systemic-risk scoring, explainable briefings |
-| [Automated Market Intelligence Analyst](https://github.com/thedeepakreddy/Automated-Market-Intelligence-Analyst) | Where is the market heading? | Price, macro and sentiment features, XGBoost/LSTM ensemble, SHAP, time-series validation |
+| [Automated Risk Intelligence Analyst](https://github.com/thedeepakreddy/Automated-Risk-Analysis-Intelligence) · [Live](https://automated-risk-intelligence-analyst-main.onrender.com) | How exposed are we right now, and why? | Market and news ingestion, transparent systemic-risk scoring, explainable briefings |
+| [Automated Market Intelligence Analyst](https://github.com/thedeepakreddy/Automated-Market-Analysis-Intelligence) · [Live](https://market-intelligence-frontend.onrender.com/) | Where is the market heading? | Price, macro and sentiment features, XGBoost/LSTM ensemble, SHAP, time-series validation |
 | [Prescriptive Churn Analytics](https://github.com/thedeepakreddy/Prescriptive-Churn-Analytics-in-E-commerce) | Who is worth retaining, at what cost? | Profit-optimized thresholds, business-cost-aware ML |
 | [Enterprise Churn Optimization](https://github.com/thedeepakreddy/Enterprise-Churn-Optimization) | How much capital is at risk from attrition? | Gradient Boosting, SHAP, capital-at-risk analysis |
 | [Last-Mile Delivery Analytics](https://github.com/thedeepakreddy/Last-Mile-Delivery-Analytics-Budapest) | Where are SLAs bleeding money? | PostgreSQL, SQL window functions, Tableau |
@@ -105,7 +125,7 @@ Echo records frontier-model trajectories: observations, tool calls, actions, res
 
 <p><img src="assets/h-toolkit.svg" width="100%" alt="05 · Toolkit"/></p>
 
-<p><img src="assets/toolkit.svg" width="100%" alt="Languages: Python, TypeScript, JavaScript, SQL, Swift, Rust. Agents: Claude Agent SDK, Gemini, Ollama, MCP, tool calling, structured outputs, agent memory, workflow learning, multi-agent orchestration, replay and recovery, verification-driven execution. AI/ML: PyTorch, Transformers, Qwen 2.5-VL, GRPO, scikit-learn, XGBoost, SHAP, TensorFlow, Keras, Prophet, SARIMAX, embeddings, RAG. Backend and data: FastAPI, Node.js, Express, PostgreSQL, SQLite, Pandas, NumPy, ETL, REST, WebSockets. Frontend and apps: React, Vite, Electron, Tauri, Recharts, Streamlit, Tableau, Power BI. Systems: WebRTC, macOS automation, accessibility APIs, OCR, Docker, GitHub Actions, Render, Vercel, Google Cloud."/></p>
+<p><img src="assets/toolkit.svg" width="100%" alt="Languages: Python, TypeScript, JavaScript, SQL, Swift, Rust. Agents: Claude Agent SDK, Gemini, Ollama, MCP, LangGraph, tool calling, structured outputs, agent memory, workflow learning, multi-agent orchestration, replay and recovery, verification-driven execution. AI/ML: PyTorch, Transformers, Qwen 2.5-VL, GRPO, scikit-learn, XGBoost, SHAP, TensorFlow, Keras, Prophet, SARIMAX, embeddings, RAG. Backend and data: FastAPI, Node.js, Express, PostgreSQL, Redis, SQLite, Pandas, NumPy, ETL, REST, WebSockets. Frontend and apps: React, Vite, Electron, Tauri, Chrome MV3, Recharts, Streamlit, Tableau, Power BI. Systems: WebRTC, macOS automation, accessibility APIs, OCR, Docker, GitHub Actions, Render, Vercel, Google Cloud."/></p>
 
 <br/>
 
