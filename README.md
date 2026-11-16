@@ -78,15 +78,75 @@ Echo records frontier-model trajectories: observations, tool calls, actions, res
 
 <br/>
 
-<p><img src="assets/h-work.svg" width="100%" alt="03 · Featured work"/></p>
+<p><img src="assets/h-systems.svg" width="100%" alt="03 · Major systems"/></p>
+
+<p><a href="https://github.com/thedeepakreddy/SYNTRA"><img src="assets/sys-syntra.svg" width="100%" alt="SYNTRA: seven layers, a planning, build and verify mission with nine roles, a human delivery gate, and a ledger of SHA-256 hashed artifacts."/></a></p>
+
+**[SYNTRA · Synchronized Intelligence for Autonomous Software Engineering](https://github.com/thedeepakreddy/SYNTRA)** is an autonomous multi-agent software engineering platform that runs like an engineering organization, not a chat room. It takes an objective and a budget and produces requirements, architecture, a cycle-free task graph, sandboxed code, independent verification and a release that a human has to authorize.
+
+<details>
+<summary><b>How SYNTRA is governed</b></summary>
+<br/>
+
+| Invariant | What it means |
+|---|---|
+| **Role invocations, not chatbots** | Agents are stateless role configurations called by deterministic orchestrators with typed contracts, budget ceilings and capability grants. |
+| **Authoritative state** | Durable state lives only in PostgreSQL 16: ACID, row-level locking, transactional outbox. |
+| **Immutable handoffs** | Agents communicate only through SHA-256 hashed, schema-validated artifacts: PRDs, ADRs, task plans, unified diffs, verification runs. |
+| **Separation of powers** | No agent may review, approve or verify its own output. |
+| **Human in the loop** | No agent can push to Git or release without human authorization at a delivery gate. |
+| **Headless first** | Operated through FastAPI REST and WebSocket endpoints and the `syntra` CLI. |
+
+**Seven layers:** control plane · LangGraph workflow orchestration · scheduling with `SKIP LOCKED` leases and Redis Streams · MCP and tool control · isolated Docker execution with no network · content-addressed memory · verification and governance.
+
+**Ten personas:** Product Manager, Software Architect, Engineering Manager, Backend, Frontend, QA, DevOps, Security Reviewer, Code Reviewer and Debugging Specialist.
+
+</details>
+
+<br/>
+
+<p><a href="https://github.com/thedeepakreddy/Pluto-LLM"><img src="assets/sys-pluto.svg" width="100%" alt="Pluto: hand-built pipeline from raw text to GPT, the Milestone 1 training run with exact resume, the M1 to M6 roadmap, and the Mini-Live speech loop."/></a></p>
+
+**[Pluto → Mini-Live](https://github.com/thedeepakreddy/Pluto-LLM)** is a language model I am building from scratch in plain PyTorch: my own data cleaning, byte-level BPE tokenizer, Transformer, sampling, training loop and evaluation reports. No Hugging Face Transformers, Lightning or tokenizer libraries.
+
+| Milestone | Result |
+|---|---|
+| **M1 · text pipeline** | A ~6M-parameter model trained from random weights on 197M tokens of TinyStories in **18 minutes on a free Kaggle T4**, with a deliberate interruption at step 500 and an exact resume. Validation loss 1.738, 0.640 bits per byte. Found and removed 15.1% exact duplicates in the dataset. |
+| **M2 · first voice** | A ~30M-parameter speech and text model trained on a self-made TinyStories-Speech dataset: **18.8% WER** on held-out passages. |
+| **M3 · text brain** | ~400M parameters, 16k context. Code ready; data preparation in progress. |
+| **M4 to M6** | Brain plus voice, then **Mini-Live** (full-duplex speech that thinks while listening and speaking), then tools, memory and a research agent. |
+
+<br/>
+
+<p><a href="https://github.com/thedeepakreddy/ATLAS-spatial-intelligence"><img src="assets/sys-atlas.svg" width="100%" alt="ATLAS: a 3D scene tracked over time with persistent object identity, a seven-layer proposed architecture, and a world memory where every fact carries its evidence type."/></a></p>
+
+**[ATLAS · Understanding the Physical World](https://github.com/thedeepakreddy/ATLAS-spatial-intelligence)** is my independent research initiative on spatial intelligence. The question behind it: what would it take for a system to keep a persistent, structured, evidence-grounded understanding of the physical world instead of interpreting every observation on its own?
+
+It investigates persistent 4D scene understanding, evidence-grounded spatial memory, object identity across views and sessions, telling real change apart from occlusion, and physical and relational reasoning. The architecture shown is the proposed direction; not every component is implemented or validated yet.
+
+<br/>
+
+<p><a href="https://github.com/thedeepakreddy/CosmOS"><img src="assets/sys-cosmos.svg" width="100%" alt="CosmOS: products connect to one coordination layer, Cosmos Core, which coordinates ToolOS, AgentOS, ResearchOS and EvalOS, with MemoryOS and ModelOS planned."/></a></p>
+
+**[CosmOS](https://github.com/thedeepakreddy/CosmOS)** is a modular intelligence infrastructure platform: independently useful systems with clear boundaries, coordinated by a thin central layer, so products like Aira and Echo do not each rebuild memory, tools, models, evaluation and orchestration. ToolOS, AgentOS, ResearchOS and EvalOS exist today; MemoryOS and ModelOS are planned as extractions from ResearchOS rather than new builds. · [Site](https://cosmos-website-8vir.onrender.com)
+
+<br/>
+
+<p><a href="https://github.com/thedeepakreddy/Aira.AI"><img src="assets/sys-aira.svg" width="100%" alt="Aira: Chat, Code, Agents, Browser and Workspace surfaces, an agent fleet with an approval dialog, and a model gateway between the app shells and local runtimes."/></a></p>
+
+**[Aira.AI](https://github.com/thedeepakreddy/Aira.AI)** is a full-stack AI workspace across web, macOS and Windows. One React workspace runs in the browser and in Tauri desktop shells, connects to a server-side model gateway that holds the provider keys, and supervises local coding, agent and Chrome automation runtimes. File changes and commands wait for approval before they run.
+
+<br/>
+
+<p><a href="https://github.com/thedeepakreddy/DataScienceStudio-AskDeepakAI"><img src="assets/sys-studio.svg" width="100%" alt="Data Science Studio: cross-validated model selection, SHAP explanations, KS-test drift monitoring, and Gemini narration whose schema has no numeric fields."/></a></p>
+
+**[Data Science Studio](https://github.com/thedeepakreddy/DataScienceStudio-AskDeepakAI)** is an AutoML workstation where every number is real. Accuracy, cross-validation scores, SHAP importances and KS-test drift statistics come from a Python microservice running scikit-learn and XGBoost on the uploaded data. Gemini is confined to narration: its response schema has no numeric fields, so it cannot be the source of a metric. Beginner and Expert modes serve business users and practitioners from the same app. · [Live app](https://askdeepakai-datascientist.onrender.com/)
+
+<br/>
+
+<p><img src="assets/h-work.svg" width="100%" alt="04 · More products"/></p>
 
 <p align="center">
-<a href="https://github.com/thedeepakreddy/SYNTRA"><img src="assets/card-syntra.svg" width="49%" alt="SYNTRA: autonomous multi-agent software engineering platform with governed roles and hashed handoffs"/></a>
-<a href="https://github.com/thedeepakreddy/ATLAS-spatial-intelligence"><img src="assets/card-atlas.svg" width="49%" alt="ATLAS: research on persistent, evidence-grounded spatial intelligence"/></a>
-<a href="https://github.com/thedeepakreddy/Pluto-LLM"><img src="assets/card-pluto.svg" width="49%" alt="Pluto: an LLM built from scratch in PyTorch, building toward Mini-Live"/></a>
-<a href="https://github.com/thedeepakreddy/CosmOS"><img src="assets/card-cosmos.svg" width="49%" alt="CosmOS: modular intelligence infrastructure platform"/></a>
-<a href="https://github.com/thedeepakreddy/Aira.AI"><img src="assets/card-aira.svg" width="49%" alt="Aira.AI: cross-platform AI workspace behind a permission gateway"/></a>
-<a href="https://github.com/thedeepakreddy/DataScienceStudio-AskDeepakAI"><img src="assets/card-studio.svg" width="49%" alt="Data Science Studio: real server-side EDA and training, the LLM only narrates"/></a>
 <a href="https://github.com/thedeepakreddy/Talktual"><img src="assets/card-talktual.svg" width="49%" alt="Talktual: real-time peer-to-peer voice translation"/></a>
 <a href="https://github.com/thedeepakreddy/Tata-Dransfer-by-AskDeepakAI"><img src="assets/card-transfer.svg" width="49%" alt="Tata Dransfer: encrypted peer-to-peer files, calls and chat, 100GB+"/></a>
 <a href="https://github.com/thedeepakreddy/Gita.AI"><img src="assets/card-gita.svg" width="49%" alt="Gita.AI: retrieval grounded in all 701 Bhagavad Gita verses"/></a>
@@ -95,12 +155,6 @@ Echo records frontier-model trajectories: observations, tool calls, actions, res
 
 | Project | Why it exists | Links |
 |---|---|---|
-| **SYNTRA** | An autonomous multi-agent software engineering platform run like an engineering organization, not a chat room. Stateless roles are invoked under typed contracts and budgets, hand off SHA-256 hashed artifacts, and no agent may review or verify its own work. Code runs in isolated Docker sandboxes and nothing ships without a human gate. | [Repo](https://github.com/thedeepakreddy/SYNTRA) |
-| **ATLAS** | An independent research initiative on spatial intelligence: dynamic 4D scene understanding, persistent world memory, physical reasoning and embodied interaction, held in one evidence-grounded world model. | [Repo](https://github.com/thedeepakreddy/ATLAS-spatial-intelligence) |
-| **Pluto → Mini-Live** | A language model built from scratch in plain PyTorch: my own byte-level BPE tokenizer, GPT, and training loop with exact resume. M1 trained a 6M-parameter model in 18 minutes on a free T4; M2 is a first voice model at 18.8% WER. It is the foundation for Mini-Live, a real-time speech and text model. | [Repo](https://github.com/thedeepakreddy/Pluto-LLM) |
-| **CosmOS** | A modular intelligence infrastructure platform where specialised operating systems for research, agents, tools, memory, models and evaluation work as one coordinated layer. | [Repo](https://github.com/thedeepakreddy/CosmOS) · [Site](https://cosmos-website-8vir.onrender.com) |
-| **Aira.AI** | One AI workspace across web, macOS and Windows. Provider keys stay server-side behind an authenticated gateway; file, shell, subagent and tool actions need approval. Typed, unit and integration tested. | [Repo](https://github.com/thedeepakreddy/Aira.AI) |
-| **Data Science Studio** | SQL, Python, ML and reporting for technical and non-technical users. Agentic reason-act-observe analysis, visual SQL builder, drift monitoring. No fabricated metrics. | [Repo](https://github.com/thedeepakreddy/DataScienceStudio-AskDeepakAI) · [Live](https://askdeepakai-datascientist.onrender.com/) |
 | **Talktual** | Built from a real cross-cultural problem: two people without a shared language. QR handshake, push-to-talk, graceful fallback when speech services drop. | [Repo](https://github.com/thedeepakreddy/Talktual) · [Live](https://talktual.onrender.com/) |
 | **Tata Dransfer** | Past the limits of free file-transfer services: 100GB+ direct-to-disk streaming, AES-GCM encrypted chat and files, audio, video and screen sharing. | [Repo](https://github.com/thedeepakreddy/Tata-Dransfer-by-AskDeepakAI) · [Live](https://tata-dransfer-by-askdeepakai-1.onrender.com/) |
 | **Gita.AI** | Donated to ISKCON. Describe a personal problem and get semantically relevant verses, with source text kept separate from AI interpretation. Multilingual. | [Repo](https://github.com/thedeepakreddy/Gita.AI) |
@@ -108,7 +162,7 @@ Echo records frontier-model trajectories: observations, tool calls, actions, res
 
 <br/>
 
-<p><img src="assets/h-analytics.svg" width="100%" alt="04 · Analytics and applied ML"/></p>
+<p><img src="assets/h-analytics.svg" width="100%" alt="05 · Analytics and applied ML"/></p>
 
 | Project | Decision it supports | Methods |
 |---|---|---|
@@ -123,13 +177,13 @@ Echo records frontier-model trajectories: observations, tool calls, actions, res
 
 <br/>
 
-<p><img src="assets/h-toolkit.svg" width="100%" alt="05 · Toolkit"/></p>
+<p><img src="assets/h-toolkit.svg" width="100%" alt="06 · Toolkit"/></p>
 
 <p><img src="assets/toolkit.svg" width="100%" alt="Languages: Python, TypeScript, JavaScript, SQL, Swift, Rust. Agents: Claude Agent SDK, Gemini, Ollama, MCP, LangGraph, tool calling, structured outputs, agent memory, workflow learning, multi-agent orchestration, replay and recovery, verification-driven execution. AI/ML: PyTorch, Transformers, Qwen 2.5-VL, GRPO, scikit-learn, XGBoost, SHAP, TensorFlow, Keras, Prophet, SARIMAX, embeddings, RAG. Backend and data: FastAPI, Node.js, Express, PostgreSQL, Redis, SQLite, Pandas, NumPy, ETL, REST, WebSockets. Frontend and apps: React, Vite, Electron, Tauri, Chrome MV3, Recharts, Streamlit, Tableau, Power BI. Systems: WebRTC, macOS automation, accessibility APIs, OCR, Docker, GitHub Actions, Render, Vercel, Google Cloud."/></p>
 
 <br/>
 
-<p><img src="assets/h-roles.svg" width="100%" alt="06 · Target roles"/></p>
+<p><img src="assets/h-roles.svg" width="100%" alt="07 · Target roles"/></p>
 
 <p><img src="assets/roles.svg" width="100%" alt="Primary target role: Forward Deployed AI Engineer. Also: AI Software Engineer, Agentic AI Engineer, Applied AI Engineer, Multimodal AI Engineer, AI Product Engineer, Computer-Use Agent Engineer, LLM / Agent Platform Engineer, AI Automation Engineer, Research Engineer (Agent Systems), Data Scientist / ML Engineer, BI and Decision Science. Education: BSc Computer Science Engineering and MSc Business Data Analytics."/></p>
 
